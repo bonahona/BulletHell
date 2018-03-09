@@ -20,9 +20,19 @@ public class Player : EntityBase
     [Header("Input")]
     public InputDevice ControllingDevice;
 
+    public int ExtraLives = 3;
+    public float MaxHealth = 5;
+    public float DamageTakenIgnoreTime = 1;
+    public float RespawnIgnoreTime = 2;
+
+    public Transform StartPosition;
+
     private Vector3 CurrentSpeed;
     private Collider Collider;
     private Rigidbody Rigidbody;
+
+    private float CurrentIgnoreTimer;
+    private bool IsDead;
 
     private Dictionary<Weapon, WeaponInstance> WeaponInstances;
 
@@ -34,6 +44,8 @@ public class Player : EntityBase
         WeaponInstances = new Dictionary<Weapon, WeaponInstance>();
         AddWeapon(PrimaryWeapon);
         AddWeapon(SecondaryWeapon);
+
+        Respawn();
         
 	}
 	
@@ -61,6 +73,25 @@ public class Player : EntityBase
         if (inputState.RightTrigger) {
             FireWeapon(PrimaryWeapon);
         }
+
+        if(CurrentIgnoreTimer >= 0) {
+            CurrentIgnoreTimer -= Time.deltaTime;
+        } else {
+            Collider.enabled = true;
+        }
+    }
+
+    public void Respawn()
+    {
+        transform.position = StartPosition.position;
+        Health = MaxHealth;
+    }
+
+    public override void TakeDamage(float damage)
+    {
+        base.TakeDamage(damage);
+        CurrentIgnoreTimer = DamageTakenIgnoreTime;
+        Collider.enabled = false;
     }
 
     public void AddWeapon(Weapon weapon)
