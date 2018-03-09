@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulletHellBona", "Assembly-CSharp.csproj", "{F6199E08-57E2-4617-E462-5F22263E6A63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulletHellBona", "Assembly-CSharp-Editor.csproj", "{3DD67AB8-537D-03DA-4037-834F98DE6924}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6199E08-57E2-4617-E462-5F22263E6A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6199E08-57E2-4617-E462-5F22263E6A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6199E08-57E2-4617-E462-5F22263E6A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6199E08-57E2-4617-E462-5F22263E6A63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD67AB8-537D-03DA-4037-834F98DE6924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD67AB8-537D-03DA-4037-834F98DE6924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD67AB8-537D-03DA-4037-834F98DE6924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD67AB8-537D-03DA-4037-834F98DE6924}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
