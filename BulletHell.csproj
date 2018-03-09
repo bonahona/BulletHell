@@ -333,10 +333,14 @@
     <Compile Include="Assets\BonaUnityEssentials\Extensions\SerializedPropertyExtensions.cs" />
     <Compile Include="Assets\BonaUnityEssentials\Utilities\ContainsFlags.cs" />
     <Compile Include="Assets\BonaUnityEssentials\Utilities\RandomFloat.cs" />
+    <Compile Include="Assets\Game\Enemies\Enemy.cs" />
+    <Compile Include="Assets\Game\Entities\EntityBase.cs" />
     <Compile Include="Assets\Game\Input\Scripts\InputDevice.cs" />
     <Compile Include="Assets\Game\Input\Scripts\InputState.cs" />
     <Compile Include="Assets\Game\Player\Player.cs" />
+    <Compile Include="Assets\Game\Weapons\Scripts\ParticleWeapon.cs" />
     <Compile Include="Assets\Game\Weapons\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Game\Weapons\Scripts\ProjectileSpawner.cs" />
     <Compile Include="Assets\Game\Weapons\Scripts\Weapon.cs" />
     <Compile Include="Assets\Game\Weapons\Scripts\WeaponInstance.cs" />
   </ItemGroup>

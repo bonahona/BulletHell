@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-public class Player : MonoBehaviour
+public class Player : EntityBase
 {
     [Header("Movement")]
     public float MovementSpeed = 1;
