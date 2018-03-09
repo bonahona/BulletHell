@@ -15,9 +15,7 @@ public class InputDevice : ScriptableObject
     public string RightVerticalAxis;
 
     [InputAxis]
-    public string LeftTriggerAxis;
-    [InputAxis]
-    public string RightTriggerAxis;
+    public string TriggerAxis;
 
     public KeyCode StartButton;
     public KeyCode XButton;
@@ -37,11 +35,15 @@ public class InputDevice : ScriptableObject
         result.BButton = Input.GetKeyDown(StartButton);
         result.AButton = Input.GetKeyDown(StartButton);
 
+        var triggerAxis = Input.GetAxis(TriggerAxis);
+        result.LeftTrigger = triggerAxis > 0.8f;
+        result.RightTrigger = triggerAxis < -0.8f;
+
         return result;
     }
 
     private Vector2 ReadStick(string horizontalAxis, string verticalAxis)
     {
-        return new Vector2(Input.GetAxis(horizontalAxis), Input.GetAxis(verticalAxis));
+        return new Vector2(Input.GetAxis(horizontalAxis), -Input.GetAxis(verticalAxis));
     }
 }
