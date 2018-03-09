@@ -11,12 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7613d02ca05b7445864f4f74c0bf31b, type: 3}
   m_Name: Player02
   m_EditorClassIdentifier: 
-  LeftHorizontalAxis: OneLeftHorizontal
-  LeftVerticalAxis: OneLeftHorizontal
-  RightHorizontalAxis: OneLeftHorizontal
-  RightVerticalAxis: OneLeftHorizontal
-  LeftTriggerAxis: OneLeftHorizontal
-  RightTriggerAxis: OneLeftHorizontal
+  LeftHorizontalAxis: TwoLeftHorizontal
+  LeftVerticalAxis: TwoLeftVertical
+  RightHorizontalAxis: TwoRightHorizontal
+  RightVerticalAxis: TwoRightVertical
+  TriggerAxis: TwoTrigger
   StartButton: 0
   XButton: 0
   YButton: 0

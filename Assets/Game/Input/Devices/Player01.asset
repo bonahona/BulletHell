@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Name: Player01
   m_EditorClassIdentifier: 
   LeftHorizontalAxis: OneLeftHorizontal
-  LeftVerticalAxis: OneLeftHorizontal
-  RightHorizontalAxis: OneLeftHorizontal
-  RightVerticalAxis: OneLeftHorizontal
-  LeftTriggerAxis: OneLeftHorizontal
-  RightTriggerAxis: OneLeftHorizontal
-  StartButton: 0
-  XButton: 0
-  YButton: 0
-  BButton: 0
-  AButton: 0
+  LeftVerticalAxis: OneLeftVertical
+  RightHorizontalAxis: OneRightHorizontal
+  RightVerticalAxis: OneRightVertical
+  TriggerAxis: OneTrigger
+  StartButton: 357
+  XButton: 352
+  YButton: 353
+  BButton: 351
+  AButton: 350
