@@ -68,6 +68,10 @@
      <Compile Include="Assets\BonaUnityEssentials\Utilities\RandomFloat.cs" />
      <Compile Include="Assets\Game\Input\Scripts\InputDevice.cs" />
      <Compile Include="Assets\Game\Input\Scripts\InputState.cs" />
+     <Compile Include="Assets\Game\Player\Player.cs" />
+     <Compile Include="Assets\Game\Weapons\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Game\Weapons\Scripts\Weapon.cs" />
+     <Compile Include="Assets\Game\Weapons\Scripts\WeaponInstance.cs" />
  <Reference Include="Unity.PackageManagerUI.Editor">
  <HintPath>D:/Unity Projects/BulletHellBona/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
