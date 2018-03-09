@@ -336,6 +336,9 @@
     <Compile Include="Assets\Game\Input\Scripts\InputDevice.cs" />
     <Compile Include="Assets\Game\Input\Scripts\InputState.cs" />
     <Compile Include="Assets\Game\Player\Player.cs" />
+    <Compile Include="Assets\Game\Weapons\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Game\Weapons\Scripts\Weapon.cs" />
+    <Compile Include="Assets\Game\Weapons\Scripts\WeaponInstance.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\ProgramData\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.1\Editor\Resources\Styles\Main_Dark.uss" />
