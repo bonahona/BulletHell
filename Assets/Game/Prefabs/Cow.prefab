@@ -3167,11 +3167,11 @@ MonoBehaviour:
     type: 2}
   SelfDesctructTimer: 10
   LootTable:
-  - DropChance: 0.3
+  - DropChance: 0.25
     Drop: {fileID: 1318320039771632, guid: 1e0b3466140186d40bf9c383c8a4087a, type: 2}
-  - DropChance: 0.1
+  - DropChance: 0.07
     Drop: {fileID: 1258695126336136, guid: 406d4c784ae94c14f950e2568e374214, type: 2}
-  - DropChance: 0.1
+  - DropChance: 0.07
     Drop: {fileID: 1738233311064642, guid: 8b471e6748df2ab4b97ae8365677c630, type: 2}
 --- !u!198 &198712886623033536
 ParticleSystem:
