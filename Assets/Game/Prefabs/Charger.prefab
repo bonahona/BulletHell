@@ -187,7 +187,7 @@ Animator:
   m_GameObject: {fileID: 1252540751509674}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 25472f4fb4912f14d8b5a35b4d9016f0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e96771c4348c04ca84697c6a08b928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 50
+  Health: 60
   DeathScore: 15
   OnDeathEffect: {fileID: 1294919099067462, guid: 1ddd8be65e2f2fa4ba12da8c71035829,
     type: 2}
