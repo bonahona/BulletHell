@@ -10,7 +10,7 @@ public class LevelObject : Manager<LevelObject>
 
     private bool IsStarted = false;
 
-    private LinkedList<LevelSpawn> Spawns;
+    private LinkedList<LevelWave> Waves;
 
     private float CurrentTimer;
 
@@ -21,8 +21,8 @@ public class LevelObject : Manager<LevelObject>
 
     private void Start()
     {
-        Spawns = new LinkedList<LevelSpawn>();
-        Level.Spawn.ForEach(s => Spawns.AddLast(s));
+        Waves = new LinkedList<LevelWave>();
+        Level.Waves.ForEach(w => Waves.AddLast(w));
     }
 
     void Update ()
@@ -33,24 +33,26 @@ public class LevelObject : Manager<LevelObject>
 
         CurrentTimer += Time.deltaTime;
 
-        foreach(var spawn in Spawns.ToList()) {
-            if(spawn.SpawnTimer <= CurrentTimer) {
-                SpawnEnemy(spawn);
-                Spawns.Remove(spawn);
+        foreach(var wave in Waves.ToList()) {
+            if(wave.SpawnTimer <= CurrentTimer) {
+                SpawnWave(wave);
+                Waves.Remove(wave);
             }
         }
 	}
 
 
-    private void SpawnEnemy(LevelSpawn spawn)
+    private void SpawnWave(LevelWave wave)
     {
-        var wrapperObject = new GameObject("Wrapper");
-        wrapperObject.transform.position = spawn.StartPosition;
+        foreach (var spawn in wave.Spawns) {
+            var wrapperObject = new GameObject("Wrapper");
+            wrapperObject.transform.position = spawn.StartPosition;
 
-        var enemy = GameObject.Instantiate(spawn.Enemy, spawn.StartPosition, spawn.Enemy.transform.rotation, wrapperObject.transform).GetComponent<Enemy>();
+            var enemy = GameObject.Instantiate(spawn.Enemy, spawn.StartPosition, spawn.Enemy.transform.rotation, wrapperObject.transform).GetComponent<Enemy>();
 
-        if (spawn.Animation != null) {
-            enemy.SetAnimationClip(spawn.Animation);
+            if (spawn.Animation != null) {
+                enemy.SetAnimationClip(spawn.Animation);
+            }
         }
     }
 }

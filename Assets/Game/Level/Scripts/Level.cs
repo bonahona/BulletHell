@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Level", menuName ="BulletHell/Level")]
 public class Level : ScriptableObject
 {
-    public List<LevelSpawn> Spawn;
+    public List<LevelWave> Waves;
 }
