@@ -6,14 +6,19 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class WeaponUpgrade : MonoBehaviour
 {
+    public float MaxSpeed = 2;
     public Weapon Weapon;
-    public Vector3 Movement;
+
     public float TimeToLive = 10;
 
     private Rigidbody Rigidbody;
+    private  Vector3 Movement;
 
-	void Start ()
+    void Start ()
     {
+        var rotation = Random.Range(0, 2 * Mathf.PI);
+        Movement = new Vector3(Mathf.Sin(rotation), 0, Mathf.Cos(rotation)) * MaxSpeed;
+
         GameObject.Destroy(gameObject, TimeToLive);
         Rigidbody = GetComponent<Rigidbody>();
 	}

@@ -9,6 +9,7 @@ public class Enemy: EntityBase
 
     public float SelfDesctructTimer = 10;
 
+    public List<EnemyDrops> LootTable;
 
     private Animator Animator;
 
@@ -19,6 +20,7 @@ public class Enemy: EntityBase
         Health -= damage;
         if(Health <= 0) {
             GameObject.Destroy(transform.parent.gameObject);
+            TryLoot();
             SpawnEffect(OnDeathEffect);
         }
     }
@@ -47,5 +49,17 @@ public class Enemy: EntityBase
             CreateAnimationOverride();
         }
         AnimatorOverride["CowAnimation"] = clip;
+    }
+
+    private void TryLoot()
+    {
+        foreach(var lootEntry in LootTable) {
+            var roll = Random.Range(0, 1);
+            if(roll > lootEntry.DropChance) {
+                if(lootEntry.Drop != null) {
+                    GameObject.Instantiate(lootEntry.Drop, transform.position, Quaternion.identity);
+                }
+            }
+        }
     }
 }

@@ -334,6 +334,7 @@
     <Compile Include="Assets\BonaUnityEssentials\Utilities\ContainsFlags.cs" />
     <Compile Include="Assets\BonaUnityEssentials\Utilities\RandomFloat.cs" />
     <Compile Include="Assets\Game\Enemies\Enemy.cs" />
+    <Compile Include="Assets\Game\Enemies\EnemyDrops.cs" />
     <Compile Include="Assets\Game\Entities\EntityBase.cs" />
     <Compile Include="Assets\Game\Input\Scripts\InputDevice.cs" />
     <Compile Include="Assets\Game\Input\Scripts\InputState.cs" />
