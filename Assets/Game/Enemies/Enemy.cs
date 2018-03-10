@@ -14,28 +14,43 @@ public class Enemy: EntityBase
     private Animator Animator;
 
     private AnimatorOverrideController AnimatorOverride;
+    private float CurrentTimer = 0;
+
+    private void Start()
+    {
+        if (AnimatorOverride == null) {
+            CreateAnimationOverride();
+        }
+    }
+
+    private void Update()
+    {
+        CurrentTimer += Time.deltaTime;
+        if(CurrentTimer >= SelfDesctructTimer) {
+            Die();
+        }
+    }
 
     public override void TakeDamage(float damage)
     {
         Health -= damage;
         if(Health <= 0) {
-            GameObject.Destroy(transform.parent.gameObject);
-            TryLoot();
-            SpawnEffect(OnDeathEffect);
+            Die();
         }
     }
 
-    private void Start()
+    private void Die()
     {
-        GameObject.Destroy(gameObject.transform.parent.gameObject, SelfDesctructTimer);
-        
-        if(AnimatorOverride == null) {
-            CreateAnimationOverride();
+        foreach(var projectile in GetComponentsInChildren<ParticleSystem>()) {
+            projectile.transform.parent = null;
+            projectile.loop = false;
         }
 
-        
+        GameObject.Destroy(transform.parent.gameObject);
+        TryLoot();
+        SpawnEffect(OnDeathEffect);
     }
-    
+
     private void CreateAnimationOverride()
     {
         Animator = GetComponent<Animator>();
