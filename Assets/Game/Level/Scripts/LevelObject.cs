@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class LevelObject : Manager<LevelObject>
 {
-    public Level Level;
+    public Level[] Levels;
 
     private bool IsStarted = false;
 
@@ -22,7 +22,15 @@ public class LevelObject : Manager<LevelObject>
     private void Start()
     {
         Waves = new LinkedList<LevelWave>();
-        Level.Waves.ForEach(w => Waves.AddLast(w));
+
+        var timerOffset = 0.0f;
+        foreach(var level in Levels) {
+            timerOffset += level.StartDelay;
+            foreach(var wave in level.Waves) {
+                Waves.AddLast(new LevelWave { SpawnTimer = wave.SpawnTimer + timerOffset, Spawns = wave.Spawns.ToList() });
+            }
+            timerOffset += level.Waves.Last().SpawnTimer;
+        }
     }
 
     void Update ()

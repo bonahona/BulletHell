@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 569a1b0a54e89f04f8239a1822e84f3b, type: 3}
   m_Name: Level01
   m_EditorClassIdentifier: 
+  StartDelay: 0
   Waves:
   - SpawnTimer: 2
     Spawns:
