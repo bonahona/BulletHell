@@ -71,6 +71,7 @@
      <Compile Include="Assets\Game\Input\Scripts\InputDevice.cs" />
      <Compile Include="Assets\Game\Input\Scripts\InputState.cs" />
      <Compile Include="Assets\Game\Player\Player.cs" />
+     <Compile Include="Assets\Game\Player\PlayerShip.cs" />
      <Compile Include="Assets\Game\Weapons\Scripts\ParticleWeapon.cs" />
      <Compile Include="Assets\Game\Weapons\Scripts\Projectile.cs" />
      <Compile Include="Assets\Game\Weapons\Scripts\ProjectileSpawner.cs" />

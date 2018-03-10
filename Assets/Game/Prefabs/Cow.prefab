@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4340391634799848}
   - component: {fileID: 198712886623033536}
   - component: {fileID: 199438247042807180}
-  - component: {fileID: 114280653669050246}
   m_Layer: 11
   m_Name: Bullets10Ring3Burst
   m_TagString: Untagged
@@ -40,10 +39,11 @@ GameObject:
   - component: {fileID: 23506009826846202}
   - component: {fileID: 33359262663335950}
   - component: {fileID: 114349766293173502}
-  - component: {fileID: 54142503610024696}
-  - component: {fileID: 65019887717772558}
-  - component: {fileID: 114130769093655672}
-  - component: {fileID: 95841780712194964}
+  - component: {fileID: 64836988872427828}
+  - component: {fileID: 54490968923784706}
+  - component: {fileID: 114452379676894346}
+  - component: {fileID: 111514182591848002}
+  - component: {fileID: 95119333923328926}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Untagged
@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368152254251866}
   m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: -6.93, y: -0.785, z: 9.71}
+  m_LocalPosition: {x: 20.8, y: -0.785, z: 0.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4340391634799848}
@@ -120,7 +120,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368152254251866}
   m_Mesh: {fileID: 0}
---- !u!54 &54142503610024696
+--- !u!54 &54490968923784706
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -135,26 +135,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!65 &65019887717772558
-BoxCollider:
+--- !u!64 &64836988872427828
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368152254251866}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0453312, y: 1.2173958, z: 2.0538993}
-  m_Center: {x: 0.14807925, y: 0.6086979, z: -0.5092616}
---- !u!95 &95841780712194964
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
+--- !u!95 &95119333923328926
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368152254251866}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: de3b3c63d55e6a842a5ac426651ee330, type: 2}
   m_CullingMode: 0
@@ -165,31 +167,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114130769093655672
-MonoBehaviour:
+--- !u!111 &111514182591848002
+Animation:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368152254251866}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94e96771c4348c04ca84697c6a08b928, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 30
-  AnimationClip: {fileID: 7400000, guid: 7f09f9d0e7a64b249887c6299b44a6b5, type: 2}
---- !u!114 &114280653669050246
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1168102757036084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fff935f593bc1645806af6cafbe2722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7f09f9d0e7a64b249887c6299b44a6b5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7f09f9d0e7a64b249887c6299b44a6b5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114349766293173502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3163,6 +3155,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114452379676894346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368152254251866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e96771c4348c04ca84697c6a08b928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 10
 --- !u!198 &198712886623033536
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -3172,7 +3176,7 @@ ParticleSystem:
   serializedVersion: 5
   lengthInSec: 5
   simulationSpeed: 1
-  stopAction: 2
+  stopAction: 0
   looping: 1
   prewarm: 0
   playOnAwake: 1
@@ -3242,7 +3246,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -3295,7 +3299,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 20
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -3411,7 +3415,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4095,7 +4099,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
       cycleCount: 3
-      repeatInterval: 1
+      repeatInterval: 1.5
   SizeModule:
     enabled: 0
     curve:
@@ -6946,7 +6950,7 @@ ParticleSystem:
     lifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.05
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -7001,7 +7005,7 @@ ParticleSystem:
     ribbonCount: 1
     worldSpace: 1
     dieWithParticles: 0
-    sizeAffectsWidth: 1
+    sizeAffectsWidth: 0
     sizeAffectsLifetime: 1
     inheritParticleColor: 1
     generateLightingData: 0
