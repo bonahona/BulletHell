@@ -308,13 +308,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.PackageManagerUI.Editor.csproj">
-      <Project>{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}</Project>
-      <Name>Unity.PackageManagerUI.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.AddOns.Editor.csproj">
       <Project>{E8F6AEC7-C558-7A8C-1B77-5EF90B9AD9FD}</Project>
       <Name>Unity.ProBuilder.AddOns.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.PackageManagerUI.Editor.csproj">
+      <Project>{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}</Project>
+      <Name>Unity.PackageManagerUI.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -345,6 +345,7 @@
     <Compile Include="Assets\Game\Particles\Scripts\ParticleEffectSelfDestruct.cs" />
     <Compile Include="Assets\Game\Player\Player.cs" />
     <Compile Include="Assets\Game\Player\PlayerShip.cs" />
+    <Compile Include="Assets\Game\UI\HealthPanel.cs" />
     <Compile Include="Assets\Game\UI\ScoreManager.cs" />
     <Compile Include="Assets\Game\Upgrades\Scripts\HealthPickup.cs" />
     <Compile Include="Assets\Game\Upgrades\Scripts\WeaponUpgrade.cs" />

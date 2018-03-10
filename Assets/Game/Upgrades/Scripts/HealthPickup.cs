@@ -34,6 +34,7 @@ public class HealthPickup : MonoBehaviour
         var playerShip = other.GetComponent<PlayerShip>();
         if (playerShip != null) {
             playerShip.Health = Mathf.Min(playerShip.Health + 1, playerShip.MaxHealth);
+            playerShip.SetHealthBar();
 
             ScoreManager.Instance.AddScore(Score);
             GameObject.Destroy(gameObject);

@@ -7,6 +7,7 @@ public class Player: MonoBehaviour
     public InputDevice Device;
     public GameObject PlayerShip;
     public Transform StartPosition;
+    public int Index;
 
     public int ExtraLives = 3;
 
@@ -29,5 +30,6 @@ public class Player: MonoBehaviour
     private void SpawnShip()
     {
         CurrentShip = GameObject.Instantiate(PlayerShip, StartPosition.position, Quaternion.Euler(0, -90, 0)).GetComponent<PlayerShip>();
+        CurrentShip.Setup(Index);
     }
 }

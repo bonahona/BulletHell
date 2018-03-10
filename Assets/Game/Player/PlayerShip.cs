@@ -30,6 +30,7 @@ public class PlayerShip : EntityBase
 
     private bool IsInvincible;
     private float CurrentIgnoreTimer;
+    private HealthPanel HealthPanel;
 
     private Dictionary<Weapon, WeaponInstance> WeaponInstances;
 
@@ -53,6 +54,12 @@ public class PlayerShip : EntityBase
         } else {
             IsInvincible = false;
         }
+    }
+
+    public void Setup(int index)
+    {
+        HealthPanel = ScoreManager.Instance.EnablePanel(index);
+        HealthPanel.SetHealth(Mathf.CeilToInt(MaxHealth));
     }
 
     public void TakeInput(InputState inputState)
@@ -100,6 +107,12 @@ public class PlayerShip : EntityBase
 
         CurrentIgnoreTimer = DamageTakenIgnoreTime;
         IsInvincible = true;
+        SetHealthBar();
+    }
+
+    public void SetHealthBar()
+    {
+        HealthPanel.SetHealth(Mathf.CeilToInt(Health));
     }
 
     public void AddWeapon(Weapon weapon)
