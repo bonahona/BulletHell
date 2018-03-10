@@ -55,11 +55,11 @@
      <Compile Include="Assets\BonaUnityEssentials\Editor\EditorWithSubEditors.cs" />
      <Compile Include="Assets\BonaUnityEssentials\Editor\InputAxisCustomDrawer.cs" />
      <Compile Include="Assets\BonaUnityEssentials\Editor\SceneCustomDrawer.cs" />
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>D:/Unity Projects/BulletHellBona/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
  <HintPath>D:/Unity Projects/BulletHellBona/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>D:/Unity Projects/BulletHellBona/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/UnityPrograms/2018.1.0b10/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -319,6 +319,27 @@
  <Reference Include="UnityEditor.Analytics">
  <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
  </Reference>
+ <Reference Include="AssetIdRemapUtility">
+ <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderCore">
+ <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderMeshOps">
+ <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Classes/ProBuilderMeshOps.dll</HintPath>
+ </Reference>
+ <Reference Include="KdTreeLib">
+ <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+ </Reference>
+ <Reference Include="pb_Stl">
+ <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+ </Reference>
+ <Reference Include="Poly2Tri">
+ <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderEditor">
+ <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Editor/ProBuilderEditor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
@@ -327,27 +348,6 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="KdTreeLib">
- <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
- </Reference>
- <Reference Include="ProBuilderCore">
- <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
- </Reference>
- <Reference Include="ProBuilderMeshOps">
- <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Classes/ProBuilderMeshOps.dll</HintPath>
- </Reference>
- <Reference Include="pb_Stl">
- <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
- </Reference>
- <Reference Include="AssetIdRemapUtility">
- <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll</HintPath>
- </Reference>
- <Reference Include="Poly2Tri">
- <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
- </Reference>
- <Reference Include="ProBuilderEditor">
- <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.1/ProBuilder/Editor/ProBuilderEditor.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>D:/UnityPrograms/2018.1.0b10/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
