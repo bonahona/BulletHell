@@ -32,13 +32,13 @@ public abstract class EntityBase : MonoBehaviour
         var projectile = other.GetComponent<Projectile>();
         if (projectile != null) {
             TakeDamage(projectile.Damage);
+            GameObject.Destroy(other.gameObject);
         }
 
         var particleWeapon = other.GetComponent<ParticleWeapon>();
         if (particleWeapon != null) {
             TakeDamage(particleWeapon.Damage);
-        }
-
-        GameObject.Destroy(other.gameObject);
+            GameObject.Destroy(other.gameObject);
+        }  
     }
 }
