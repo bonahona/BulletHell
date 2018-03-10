@@ -67,6 +67,7 @@
      <Compile Include="Assets\BonaUnityEssentials\Utilities\ContainsFlags.cs" />
      <Compile Include="Assets\BonaUnityEssentials\Utilities\RandomFloat.cs" />
      <Compile Include="Assets\Game\Enemies\Enemy.cs" />
+     <Compile Include="Assets\Game\Enemies\EnemyDrops.cs" />
      <Compile Include="Assets\Game\Entities\EntityBase.cs" />
      <Compile Include="Assets\Game\Input\Scripts\InputDevice.cs" />
      <Compile Include="Assets\Game\Input\Scripts\InputState.cs" />
@@ -74,6 +75,7 @@
      <Compile Include="Assets\Game\Level\Scripts\LevelObject.cs" />
      <Compile Include="Assets\Game\Level\Scripts\LevelSpawn.cs" />
      <Compile Include="Assets\Game\Level\Scripts\LevelWave.cs" />
+     <Compile Include="Assets\Game\Particles\Scripts\ParticleEffectSelfDestruct.cs" />
      <Compile Include="Assets\Game\Player\Player.cs" />
      <Compile Include="Assets\Game\Player\PlayerShip.cs" />
      <Compile Include="Assets\Game\Upgrades\Scripts\HealthPickup.cs" />

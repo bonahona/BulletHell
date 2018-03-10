@@ -3149,7 +3149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 10
+  OnDeathEffect: {fileID: 0}
   SelfDesctructTimer: 10
+  LootTable:
+  - DropChance: 0.99
+    Drop: {fileID: 1258695126336136, guid: 406d4c784ae94c14f950e2568e374214, type: 2}
 --- !u!198 &198712886623033536
 ParticleSystem:
   m_ObjectHideFlags: 1

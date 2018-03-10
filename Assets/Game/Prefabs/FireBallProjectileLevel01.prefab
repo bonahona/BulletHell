@@ -126,6 +126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnHitEffect: {fileID: 1564555191938782, guid: d65de79f0c02b2349ac111630b5662be,
     type: 2}
-  Damage: 1
+  Damage: 5
   Speed: {x: 0, y: 0, z: 20}
   TimeToLive: 10
