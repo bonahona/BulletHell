@@ -14,16 +14,16 @@ MonoBehaviour:
   Levels:
   - ProjectilePrefab: {fileID: 1411024393098700, guid: bd6a4c4215b526a4d9cd595417825f44,
       type: 2}
-    Cooldown: 0.5
+    Cooldown: 0.2
   - ProjectilePrefab: {fileID: 1411024393098700, guid: bd6a4c4215b526a4d9cd595417825f44,
       type: 2}
-    Cooldown: 0.45
+    Cooldown: 0.16
   - ProjectilePrefab: {fileID: 1411024393098700, guid: bd6a4c4215b526a4d9cd595417825f44,
       type: 2}
-    Cooldown: 0.4
+    Cooldown: 0.12
   - ProjectilePrefab: {fileID: 1411024393098700, guid: bd6a4c4215b526a4d9cd595417825f44,
       type: 2}
-    Cooldown: 0.35
+    Cooldown: 0.1
   - ProjectilePrefab: {fileID: 1411024393098700, guid: bd6a4c4215b526a4d9cd595417825f44,
       type: 2}
-    Cooldown: 0.3
+    Cooldown: 0.08

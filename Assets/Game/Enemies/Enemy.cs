@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Enemy: EntityBase
 {
+    public int DeathScore = 10;
+
     public GameObject OnDeathEffect;
 
     public float SelfDesctructTimer = 10;
@@ -27,7 +29,7 @@ public class Enemy: EntityBase
     {
         CurrentTimer += Time.deltaTime;
         if(CurrentTimer >= SelfDesctructTimer) {
-            Die();
+            Die(false);
         }
     }
 
@@ -35,11 +37,11 @@ public class Enemy: EntityBase
     {
         Health -= damage;
         if(Health <= 0) {
-            Die();
+            Die(true);
         }
     }
 
-    private void Die()
+    private void Die(bool isPlayerKilled)
     {
         foreach(var projectile in GetComponentsInChildren<ParticleSystem>()) {
             projectile.transform.parent = null;
@@ -47,7 +49,12 @@ public class Enemy: EntityBase
         }
 
         GameObject.Destroy(transform.parent.gameObject);
-        TryLoot();
+
+        if (isPlayerKilled) {
+            ScoreManager.Instance.AddScore(DeathScore);
+            TryLoot();
+        }
+
         SpawnEffect(OnDeathEffect);
     }
 

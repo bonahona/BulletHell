@@ -9,7 +9,7 @@ public class Weapon : ScriptableObject
 
     public void Fire(WeaponInstance instance)
     {
-        var currentLevel = Mathf.Min(instance.CurrentLevel, Levels.Count);
+        var currentLevel = Mathf.Min(instance.CurrentLevel, Levels.Count -1);
 
         if(Levels[currentLevel].ProjectilePrefab == null) {
             return;

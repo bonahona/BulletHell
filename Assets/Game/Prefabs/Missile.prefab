@@ -156,7 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f08971876895c428d3487bc2537063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 15
+  OnHitEffect: {fileID: 0}
+  Damage: 50
   Speed: {x: 0, y: 0, z: 20}
   TimeToLive: 10
 --- !u!114 &114611089956221264

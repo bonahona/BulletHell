@@ -18,12 +18,6 @@ MonoBehaviour:
     - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
       Animation: {fileID: 7400000, guid: 7f09f9d0e7a64b249887c6299b44a6b5, type: 2}
       StartPosition: {x: 0, y: 0, z: 0}
-    - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
-      Animation: {fileID: 7400000, guid: cf9c4afaf59ed5e4aadb2268310b6784, type: 2}
-      StartPosition: {x: 0, y: 0, z: 0}
-    - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
-      Animation: {fileID: 7400000, guid: f498c79e8b9be854fbaf07a31d09847a, type: 2}
-      StartPosition: {x: 0, y: 0, z: 0}
   - SpawnTimer: 14
     Spawns:
     - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
@@ -35,8 +29,8 @@ MonoBehaviour:
   - SpawnTimer: 26
     Spawns:
     - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
-      Animation: {fileID: 7400000, guid: cf9c4afaf59ed5e4aadb2268310b6784, type: 2}
+      Animation: {fileID: 7400000, guid: 1f21e6645403d8c408a376b4483b3915, type: 2}
       StartPosition: {x: 10, y: 0, z: 0}
     - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
-      Animation: {fileID: 7400000, guid: cf9c4afaf59ed5e4aadb2268310b6784, type: 2}
-      StartPosition: {x: -10, y: 0, z: -5}
+      Animation: {fileID: 7400000, guid: 1f21e6645403d8c408a376b4483b3915, type: 2}
+      StartPosition: {x: 0, y: 0, z: -5}
