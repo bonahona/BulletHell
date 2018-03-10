@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5290191426b6a640892a8daeb693c2a, type: 3}
+  m_Name: Fireball
+  m_EditorClassIdentifier: 
+  Levels:
+  - ProjectilePrefab: {fileID: 1411024393098700, guid: bd6a4c4215b526a4d9cd595417825f44,
+      type: 2}
+    Cooldown: 0.5
+  - ProjectilePrefab: {fileID: 1411024393098700, guid: bd6a4c4215b526a4d9cd595417825f44,
+      type: 2}
+    Cooldown: 0.45
+  - ProjectilePrefab: {fileID: 1411024393098700, guid: bd6a4c4215b526a4d9cd595417825f44,
+      type: 2}
+    Cooldown: 0.4
+  - ProjectilePrefab: {fileID: 1411024393098700, guid: bd6a4c4215b526a4d9cd595417825f44,
+      type: 2}
+    Cooldown: 0.35
+  - ProjectilePrefab: {fileID: 1411024393098700, guid: bd6a4c4215b526a4d9cd595417825f44,
+      type: 2}
+    Cooldown: 0.3

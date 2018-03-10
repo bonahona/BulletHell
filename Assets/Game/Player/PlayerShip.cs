@@ -15,6 +15,8 @@ public class PlayerShip : EntityBase
     public Weapon PrimaryWeapon;
     public Weapon SecondaryWeapon;
 
+    public float MaxHealth = 3;
+
     public Transform WeaponPoint;
 
     public float DamageTakenIgnoreTime = 1;
@@ -116,5 +118,14 @@ public class PlayerShip : EntityBase
     public Vector3 GetWeaponPoint()
     {
         return WeaponPoint.position;
+    }
+
+    public WeaponInstance GetInstanceForWeapon(Weapon weapon)
+    {
+        if (WeaponInstances.ContainsKey(weapon)) {
+            return WeaponInstances[weapon];
+        } else {
+            return null;
+        }
     }
 }

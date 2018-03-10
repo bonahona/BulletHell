@@ -343,11 +343,14 @@
     <Compile Include="Assets\Game\Level\Scripts\LevelWave.cs" />
     <Compile Include="Assets\Game\Player\Player.cs" />
     <Compile Include="Assets\Game\Player\PlayerShip.cs" />
+    <Compile Include="Assets\Game\Upgrades\Scripts\HealthPickup.cs" />
+    <Compile Include="Assets\Game\Upgrades\Scripts\WeaponUpgrade.cs" />
     <Compile Include="Assets\Game\Weapons\Scripts\ParticleWeapon.cs" />
     <Compile Include="Assets\Game\Weapons\Scripts\Projectile.cs" />
     <Compile Include="Assets\Game\Weapons\Scripts\ProjectileSpawner.cs" />
     <Compile Include="Assets\Game\Weapons\Scripts\Weapon.cs" />
     <Compile Include="Assets\Game\Weapons\Scripts\WeaponInstance.cs" />
+    <Compile Include="Assets\Game\Weapons\Scripts\WeaponLevel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\ProgramData\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.1\Editor\Resources\Styles\Main_Dark.uss" />

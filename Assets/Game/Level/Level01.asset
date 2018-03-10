@@ -11,13 +11,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 569a1b0a54e89f04f8239a1822e84f3b, type: 3}
   m_Name: Level01
   m_EditorClassIdentifier: 
-  Spawn:
-  - SpawnTimer: 5
-    Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
-    StartPosition: {x: -17, y: 0, z: 0}
-  - SpawnTimer: 5
-    Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
-    StartPosition: {x: 0, y: 0, z: 0}
-  - SpawnTimer: 5
-    Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
-    StartPosition: {x: 17, y: 0, z: 0}
+  Waves:
+  - SpawnTimer: 0
+    Spawns:
+    - Enemy: {fileID: 0}
+      Animation: {fileID: 0}
+      StartPosition: {x: 0, y: 0, z: 0}
+    - Enemy: {fileID: 0}
+      Animation: {fileID: 0}
+      StartPosition: {x: 0, y: 0, z: 0}
+    - Enemy: {fileID: 0}
+      Animation: {fileID: 0}
+      StartPosition: {x: 0, y: 0, z: 0}

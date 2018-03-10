@@ -5,16 +5,17 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Weapon", menuName ="BulletHell/New Weapon")]
 public class Weapon : ScriptableObject
 {
-    public GameObject ProjectilePrefab;
+    public List<WeaponLevel> Levels;
 
-    public float Cooldown;
-
-    public void Fire(PlayerShip player)
+    public void Fire(WeaponInstance instance)
     {
-        if(ProjectilePrefab == null) {
+        var currentLevel = Mathf.Min(instance.CurrentLevel, Levels.Count);
+
+        if(Levels[currentLevel].ProjectilePrefab == null) {
             return;
         }
 
-        GameObject.Instantiate(ProjectilePrefab, player.GetWeaponPoint(), Quaternion.identity);
+        GameObject.Instantiate(Levels[currentLevel].ProjectilePrefab, instance.Player.GetWeaponPoint(), Quaternion.identity);
+        instance.CurrentCooldown = Levels[currentLevel].Cooldown;
     }
 }

@@ -8,13 +8,13 @@ public class WeaponInstance
     public PlayerShip Player;
     public Weapon Weapon;
 
+    public int CurrentLevel;
     public float CurrentCooldown;
 
     public void Fire(PlayerShip player)
     {
         if (CurrentCooldown < 0) {
-            Weapon.Fire(player);
-            CurrentCooldown = Weapon.Cooldown;
+            Weapon.Fire(this);
         }
     }
 
@@ -23,5 +23,10 @@ public class WeaponInstance
         if (CurrentCooldown >= 0) {
             CurrentCooldown -= Time.deltaTime;
         }
+    }
+
+    public void Upgrade()
+    {
+        CurrentLevel++;
     }
 }
