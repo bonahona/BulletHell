@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 54142503610024696}
   - component: {fileID: 65019887717772558}
   - component: {fileID: 114130769093655672}
+  - component: {fileID: 95841780712194964}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Untagged
@@ -69,14 +70,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368152254251866}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.3911443, y: 0, z: 3.13}
+  m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.70710784}
+  m_LocalPosition: {x: -6.93, y: -0.785, z: 9.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4340391634799848}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!23 &23506009826846202
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -144,8 +145,26 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0453312, y: 1.2173958, z: 1.43}
+  m_Size: {x: 2.0453312, y: 1.2173958, z: 2.0538993}
   m_Center: {x: 0.14807925, y: 0.6086979, z: -0.5092616}
+--- !u!95 &95841780712194964
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368152254251866}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de3b3c63d55e6a842a5ac426651ee330, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114130769093655672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -158,6 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 30
+  AnimationClip: {fileID: 7400000, guid: 7f09f9d0e7a64b249887c6299b44a6b5, type: 2}
 --- !u!114 &114280653669050246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7742,7 +7762,7 @@ ParticleSystemRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_MotionVectors: 1
+  m_MotionVectors: 2
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295

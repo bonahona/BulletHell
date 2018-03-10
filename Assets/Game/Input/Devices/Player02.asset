@@ -16,7 +16,7 @@ MonoBehaviour:
   RightHorizontalAxis: TwoRightHorizontal
   RightVerticalAxis: TwoRightVertical
   TriggerAxis: TwoTrigger
-  StartButton: 0
+  StartButton: 377
   XButton: 0
   YButton: 0
   BButton: 0
