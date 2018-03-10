@@ -31,6 +31,7 @@ public abstract class EntityBase : MonoBehaviour
     {
         var projectile = other.GetComponent<Projectile>();
         if (projectile != null) {
+            projectile.OnHit();
             TakeDamage(projectile.Damage);
             GameObject.Destroy(other.gameObject);
         }
@@ -40,5 +41,14 @@ public abstract class EntityBase : MonoBehaviour
             TakeDamage(particleWeapon.Damage);
             GameObject.Destroy(other.gameObject);
         }  
+    }
+
+    protected void SpawnEffect(GameObject onDeathEffect)
+    {
+        if (onDeathEffect == null) {
+            return;
+        }
+
+        GameObject.Instantiate(onDeathEffect, transform.position, onDeathEffect.transform.rotation);
     }
 }

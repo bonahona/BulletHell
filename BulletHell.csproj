@@ -341,6 +341,7 @@
     <Compile Include="Assets\Game\Level\Scripts\LevelObject.cs" />
     <Compile Include="Assets\Game\Level\Scripts\LevelSpawn.cs" />
     <Compile Include="Assets\Game\Level\Scripts\LevelWave.cs" />
+    <Compile Include="Assets\Game\Particles\Scripts\ParticleEffectSelfDestruct.cs" />
     <Compile Include="Assets\Game\Player\Player.cs" />
     <Compile Include="Assets\Game\Player\PlayerShip.cs" />
     <Compile Include="Assets\Game\Upgrades\Scripts\HealthPickup.cs" />

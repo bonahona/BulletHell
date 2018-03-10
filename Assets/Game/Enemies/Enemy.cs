@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Enemy: EntityBase
 {
+    public GameObject OnDeathEffect;
+
     public float SelfDesctructTimer = 10;
     public AnimationClip AnimationClip;
 
@@ -17,6 +19,7 @@ public class Enemy: EntityBase
         Health -= damage;
         if(Health <= 0) {
             GameObject.Destroy(transform.parent.gameObject);
+            SpawnEffect(OnDeathEffect);
         }
     }
 

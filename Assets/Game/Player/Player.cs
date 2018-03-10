@@ -12,11 +12,6 @@ public class Player: MonoBehaviour
 
     private PlayerShip CurrentShip;
 
-    private void Start()
-    {
-        //SpawnShip();
-    }
-
     private void Update()
     {
         var inputState = Device.Read();

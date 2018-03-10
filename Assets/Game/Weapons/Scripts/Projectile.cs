@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public GameObject OnHitEffect;
 
     public float Damage;
     public Vector3 Speed;
@@ -30,4 +31,11 @@ public class Projectile : MonoBehaviour
             GameObject.Destroy(gameObject);
         }
 	}
+
+    public void OnHit()
+    {
+        if(OnHitEffect != null) {
+            GameObject.Instantiate(OnHitEffect, transform.position, OnHitEffect.transform.rotation);
+        }
+    }
 }

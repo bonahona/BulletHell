@@ -17,6 +17,8 @@ public class PlayerShip : EntityBase
 
     public float MaxHealth = 3;
 
+    public GameObject OnDeathEffect;
+
     public Transform WeaponPoint;
 
     public float DamageTakenIgnoreTime = 1;
@@ -91,6 +93,7 @@ public class PlayerShip : EntityBase
         Health -= damage;
         if(Health <= 0) {
             GameObject.Destroy(gameObject);
+            SpawnEffect(OnDeathEffect);
         }
 
         CurrentIgnoreTimer = DamageTakenIgnoreTime;
