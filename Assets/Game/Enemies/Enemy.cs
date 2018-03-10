@@ -29,4 +29,9 @@ public class Enemy: EntityBase
 
         AnimatorOverride["CowAnimation"] = AnimationClip;
     }
+
+    public void SetAnimationClip(AnimationClip clip)
+    {
+        AnimatorOverride["CowAnimation"] = clip;
+    }
 }

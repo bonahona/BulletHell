@@ -47,6 +47,10 @@ public class LevelObject : Manager<LevelObject>
         var wrapperObject = new GameObject("Wrapper");
         wrapperObject.transform.position = spawn.StartPosition;
 
-        GameObject.Instantiate(spawn.Enemy, spawn.StartPosition, spawn.Enemy.transform.rotation, wrapperObject.transform);
+        var enemy = GameObject.Instantiate(spawn.Enemy, spawn.StartPosition, spawn.Enemy.transform.rotation, wrapperObject.transform).GetComponent<Enemy>();
+
+        if (spawn.Animation != null) {
+            enemy.SetAnimationClip(spawn.Animation);
+        }
     }
 }
