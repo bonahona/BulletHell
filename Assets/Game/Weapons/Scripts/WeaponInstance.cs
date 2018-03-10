@@ -5,12 +5,12 @@ using UnityEngine;
 [System.Serializable]
 public class WeaponInstance
 {
-    public Player Player;
+    public PlayerShip Player;
     public Weapon Weapon;
 
     public float CurrentCooldown;
 
-    public void Fire(Player player)
+    public void Fire(PlayerShip player)
     {
         if (CurrentCooldown < 0) {
             Weapon.Fire(player);

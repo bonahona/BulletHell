@@ -450,7 +450,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh12568
+  m_Name: pb_Mesh-824878
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -596,7 +596,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh12564
+  m_Name: pb_Mesh13198
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -814,6 +814,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114452379676894346, guid: cb6153105d74a78479940f271524c81c,
+        type: 2}
+      propertyPath: AnimationClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 7f09f9d0e7a64b249887c6299b44a6b5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb6153105d74a78479940f271524c81c, type: 2}
   m_IsPrefabParent: 0
@@ -866,6 +871,21 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1563661764}
+    - target: {fileID: 114452379676894346, guid: cb6153105d74a78479940f271524c81c,
+        type: 2}
+      propertyPath: AnimationClip
+      value: 
+      objectReference: {fileID: 7400000, guid: cf9c4afaf59ed5e4aadb2268310b6784, type: 2}
+    - target: {fileID: 95119333923328926, guid: cb6153105d74a78479940f271524c81c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111514182591848002, guid: cb6153105d74a78479940f271524c81c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb6153105d74a78479940f271524c81c, type: 2}
   m_IsPrefabParent: 0
