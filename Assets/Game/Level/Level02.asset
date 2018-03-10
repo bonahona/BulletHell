@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569a1b0a54e89f04f8239a1822e84f3b, type: 3}
+  m_Name: Level02
+  m_EditorClassIdentifier: 
+  Waves:
+  - SpawnTimer: 2
+    Spawns:
+    - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
+      Animation: {fileID: 7400000, guid: 7f09f9d0e7a64b249887c6299b44a6b5, type: 2}
+      StartPosition: {x: -15, y: 0, z: 0}
+    - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
+      Animation: {fileID: 7400000, guid: 7f09f9d0e7a64b249887c6299b44a6b5, type: 2}
+      StartPosition: {x: 15, y: 0, z: 0}
+    - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
+      Animation: {fileID: 7400000, guid: cf9c4afaf59ed5e4aadb2268310b6784, type: 2}
+      StartPosition: {x: 0, y: 0, z: 0}
+  - SpawnTimer: 14
+    Spawns:
+    - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
+      Animation: {fileID: 7400000, guid: 7f09f9d0e7a64b249887c6299b44a6b5, type: 2}
+      StartPosition: {x: 10, y: 0, z: 0}
+    - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
+      Animation: {fileID: 7400000, guid: 7f09f9d0e7a64b249887c6299b44a6b5, type: 2}
+      StartPosition: {x: -10, y: 0, z: 0}
+  - SpawnTimer: 26
+    Spawns:
+    - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
+      Animation: {fileID: 7400000, guid: cf9c4afaf59ed5e4aadb2268310b6784, type: 2}
+      StartPosition: {x: 10, y: 0, z: 0}
+    - Enemy: {fileID: 1368152254251866, guid: cb6153105d74a78479940f271524c81c, type: 2}
+      Animation: {fileID: 7400000, guid: cf9c4afaf59ed5e4aadb2268310b6784, type: 2}
+      StartPosition: {x: -10, y: 0, z: -5}
