@@ -17,11 +17,6 @@ public abstract class EntityBase : MonoBehaviour
         }
     }
 
-    void OnParticleCollision(GameObject other)
-    {
-        Debug.Log(other);
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         OnAnyCollision(collision.collider);
@@ -41,7 +36,6 @@ public abstract class EntityBase : MonoBehaviour
 
         var particleWeapon = other.GetComponent<ParticleWeapon>();
         if (particleWeapon != null) {
-            Debug.Log("Damage");
             TakeDamage(particleWeapon.Damage);
         }
 

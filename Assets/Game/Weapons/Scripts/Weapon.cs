@@ -9,7 +9,7 @@ public class Weapon : ScriptableObject
 
     public float Cooldown;
 
-    public void Fire(Player player)
+    public void Fire(PlayerShip player)
     {
         if(ProjectilePrefab == null) {
             return;
