@@ -8,7 +8,7 @@ public class Enemy: EntityBase
     public GameObject OnDeathEffect;
 
     public float SelfDesctructTimer = 10;
-    public AnimationClip AnimationClip;
+
 
     private Animator Animator;
 
@@ -31,7 +31,7 @@ public class Enemy: EntityBase
             CreateAnimationOverride();
         }
 
-        AnimatorOverride["CowAnimation"] = AnimationClip;
+        
     }
     
     private void CreateAnimationOverride()

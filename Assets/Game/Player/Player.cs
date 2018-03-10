@@ -18,7 +18,7 @@ public class Player: MonoBehaviour
 
         if(CurrentShip == null) {
             if (inputState.StartButton) {
-                //LevelObject.Instance.StartLevel();
+                LevelObject.Instance.StartLevel();
                 SpawnShip();
             }
         } else {
