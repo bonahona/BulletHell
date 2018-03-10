@@ -81,6 +81,8 @@ public class PlayerShip : EntityBase
 
     public void Spawn()
     {
+        Health = MaxHealth;
+        CurrentIgnoreTimer = DamageTakenIgnoreTime;
         IsInvincible = true;
     }
 

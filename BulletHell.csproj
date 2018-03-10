@@ -345,6 +345,7 @@
     <Compile Include="Assets\Game\Particles\Scripts\ParticleEffectSelfDestruct.cs" />
     <Compile Include="Assets\Game\Player\Player.cs" />
     <Compile Include="Assets\Game\Player\PlayerShip.cs" />
+    <Compile Include="Assets\Game\UI\ScoreManager.cs" />
     <Compile Include="Assets\Game\Upgrades\Scripts\HealthPickup.cs" />
     <Compile Include="Assets\Game\Upgrades\Scripts\WeaponUpgrade.cs" />
     <Compile Include="Assets\Game\Weapons\Scripts\ParticleWeapon.cs" />

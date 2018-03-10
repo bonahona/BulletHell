@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4340391634799848}
   - component: {fileID: 198712886623033536}
   - component: {fileID: 199438247042807180}
+  - component: {fileID: 114353881095173090}
   m_Layer: 11
   m_Name: Bullets10Ring3Burst
   m_TagString: Untagged
@@ -70,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368152254251866}
   m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 20.8, y: 0, z: 0.61}
+  m_LocalPosition: {x: -3.9588814, y: -2.8741992, z: 3.4054124}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4340391634799848}
@@ -144,8 +145,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.0453312, y: 1.2173958, z: 2.0538993}
+  m_Center: {x: 0.14807925, y: 0.6086979, z: -0.5092616}
 --- !u!95 &95119333923328926
 Animator:
   serializedVersion: 3
@@ -3137,6 +3138,18 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114353881095173090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168102757036084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fff935f593bc1645806af6cafbe2722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1
 --- !u!114 &114452379676894346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3148,12 +3161,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e96771c4348c04ca84697c6a08b928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 10
-  OnDeathEffect: {fileID: 0}
+  Health: 30
+  DeathScore: 10
+  OnDeathEffect: {fileID: 1062268592477914, guid: 07b7bb4c0c3f83049abd7ffb3fe987e4,
+    type: 2}
   SelfDesctructTimer: 10
   LootTable:
-  - DropChance: 0.99
+  - DropChance: 0.3
+    Drop: {fileID: 1318320039771632, guid: 1e0b3466140186d40bf9c383c8a4087a, type: 2}
+  - DropChance: 0.1
     Drop: {fileID: 1258695126336136, guid: 406d4c784ae94c14f950e2568e374214, type: 2}
+  - DropChance: 0.1
+    Drop: {fileID: 1738233311064642, guid: 8b471e6748df2ab4b97ae8365677c630, type: 2}
 --- !u!198 &198712886623033536
 ParticleSystem:
   m_ObjectHideFlags: 1

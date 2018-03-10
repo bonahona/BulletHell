@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class WeaponUpgrade : MonoBehaviour
 {
+    public int Score = 100;
+
     public float MaxSpeed = 2;
     public Weapon Weapon;
 
@@ -35,6 +37,7 @@ public class WeaponUpgrade : MonoBehaviour
         if(playerShip != null) {
             playerShip.GetInstanceForWeapon(Weapon).Upgrade();
 
+            ScoreManager.Instance.AddScore(Score);
             GameObject.Destroy(gameObject);
         }
     }

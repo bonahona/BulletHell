@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class HealthPickup : MonoBehaviour
 {
+    public int Score = 50;
     public float MaxSpeed = 2;
 
     public float TimeToLive = 10;
@@ -34,6 +35,7 @@ public class HealthPickup : MonoBehaviour
         if (playerShip != null) {
             playerShip.Health = Mathf.Min(playerShip.Health + 1, playerShip.MaxHealth);
 
+            ScoreManager.Instance.AddScore(Score);
             GameObject.Destroy(gameObject);
         }
     }
