@@ -69,10 +69,10 @@ public class Enemy: EntityBase
     private void TryLoot()
     {
         foreach(var lootEntry in LootTable) {
-            var roll = Random.Range(0, 1);
-            if(roll > lootEntry.DropChance) {
+            var roll = Random.Range(0.0f, 1.0f); 
+            if(roll < lootEntry.DropChance) {
                 if(lootEntry.Drop != null) {
-                    GameObject.Instantiate(lootEntry.Drop, transform.position, Quaternion.identity);
+                    GameObject.Instantiate(lootEntry.Drop, transform.position, lootEntry.Drop.transform.rotation);
                 }
             }
         }
