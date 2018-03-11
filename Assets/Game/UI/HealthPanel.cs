@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HealthPanel : MonoBehaviour
 {
     public List<Image> PanelPart;
+    public Text DeathcountText;
 
 	public void SetHealth(int health)
     {
@@ -16,5 +17,10 @@ public class HealthPanel : MonoBehaviour
                 PanelPart[i -1].enabled = false;
             }
         }
+    }
+
+    public void SetDeathCount(int deathCount)
+    {
+        DeathcountText.text = deathCount.ToString("D3");
     }
 }

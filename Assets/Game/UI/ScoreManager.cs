@@ -18,17 +18,25 @@ public class ScoreManager : Manager<ScoreManager>
         HealthPanel02.gameObject.SetActive(false);
     }
 
+    public HealthPanel GetHealthPanel(int index)
+    {
+        if (index == 1) {
+            return HealthPanel01;
+        } else if (index == 2) {
+            return HealthPanel02;
+        } else {
+            return null;
+        }
+    }
+
     public HealthPanel EnablePanel(int index)
     {
-        if(index == 1) {
-            HealthPanel01.gameObject.SetActive(true);
-            return HealthPanel01;
-        }else if(index == 2) {
-            HealthPanel02.gameObject.SetActive(true);
-            return HealthPanel02;
+        var panel = GetHealthPanel(index);
+        if (panel != null) {
+            panel.gameObject.SetActive(true);
         }
 
-        return null;
+        return panel;
     }
 
     public void AddScore(int score)

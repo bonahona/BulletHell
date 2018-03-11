@@ -12,6 +12,7 @@ public class Player: MonoBehaviour
     public int ExtraLives = 3;
 
     private PlayerShip CurrentShip;
+    private int CurrentLife = -1;
 
     private void Update()
     {
@@ -31,5 +32,7 @@ public class Player: MonoBehaviour
     {
         CurrentShip = GameObject.Instantiate(PlayerShip, StartPosition.position, Quaternion.Euler(0, -90, 0)).GetComponent<PlayerShip>();
         CurrentShip.Setup(Index);
+        CurrentLife++;
+        ScoreManager.Instance.GetHealthPanel(Index).SetDeathCount(CurrentLife);
     }
 }
